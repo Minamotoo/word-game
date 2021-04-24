@@ -36,7 +36,7 @@ public class WordGame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        กากบาท = new javax.swing.JLabel();
+        close = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         WordGame2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -134,12 +134,12 @@ public class WordGame extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 102, 102));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
 
-        กากบาท.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
-        กากบาท.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท.setText("X");
-        กากบาท.addMouseListener(new java.awt.event.MouseAdapter() {
+        close.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
+        close.setForeground(new java.awt.Color(255, 255, 255));
+        close.setText("X");
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาทMouseClicked(evt);
+                closeMouseClicked(evt);
             }
         });
 
@@ -149,13 +149,13 @@ public class WordGame extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(0, 370, Short.MAX_VALUE)
-                .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -202,11 +202,6 @@ public class WordGame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void กากบาทMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาทMouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_กากบาทMouseClicked
-
     private void EXIT2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT2MouseClicked
         // TODO add your handling code here:
         System.exit(0);
@@ -221,17 +216,22 @@ public class WordGame extends javax.swing.JFrame {
         // TODO add your handling code here:
         Page2 p = new Page2();
         p.setVisible(true);
-        WordGame w = new  WordGame();
-        w.setVisible(false);
+        this.setVisible(false);
     }//GEN-LAST:event_PLAYMouseClicked
 
     private void PLAY2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLAY2MouseClicked
         // TODO add your handling code here:
-        Page2 p = new Page2();
-        p.setVisible(true);
-        WordGame w = new  WordGame();
-        w.setVisible(false);
+//        Page2 p = new Page2();
+//        p.setVisible(true);
+//        WordGame w = new  WordGame();
+//        w.setVisible(false);
+//        this.setVisible(false);
     }//GEN-LAST:event_PLAY2MouseClicked
+
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_closeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -277,11 +277,11 @@ public class WordGame extends javax.swing.JFrame {
     private javax.swing.JLabel WordGame1;
     private javax.swing.JLabel WordGame2;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel close;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JLabel กากบาท;
     // End of variables declaration//GEN-END:variables
 }

@@ -206,7 +206,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="370" max="32767" attributes="0"/>
-                      <Component id="กากบาท" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="close" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -214,14 +214,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="กากบาท" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="close" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="&#xe01;&#xe32;&#xe01;&#xe1a;&#xe32;&#xe17;">
+            <Component class="javax.swing.JLabel" name="close">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Ashcan BB" size="30" style="1"/>
@@ -232,7 +232,7 @@
                 <Property name="text" type="java.lang.String" value="X"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="&#xe01;&#xe32;&#xe01;&#xe1a;&#xe32;&#xe17;MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="closeMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>

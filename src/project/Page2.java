@@ -28,29 +28,29 @@ public class Page2 extends javax.swing.JFrame {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        EXIT2 = new javax.swing.JPanel();
-        EXIT = new javax.swing.JLabel();
+        animal2 = new javax.swing.JPanel();
+        animal1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        กากบาท = new javax.swing.JLabel();
-        กากบาท1 = new javax.swing.JLabel();
+        close = new javax.swing.JLabel();
+        back = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         WordGame3 = new javax.swing.JLabel();
-        EXIT3 = new javax.swing.JPanel();
-        EXIT1 = new javax.swing.JLabel();
-        EXIT8 = new javax.swing.JPanel();
-        EXIT9 = new javax.swing.JLabel();
-        EXIT16 = new javax.swing.JPanel();
-        EXIT17 = new javax.swing.JLabel();
-        EXIT14 = new javax.swing.JPanel();
-        EXIT15 = new javax.swing.JLabel();
-        EXIT12 = new javax.swing.JPanel();
-        EXIT13 = new javax.swing.JLabel();
-        EXIT10 = new javax.swing.JPanel();
-        EXIT7 = new javax.swing.JLabel();
-        EXIT6 = new javax.swing.JPanel();
-        EXIT11 = new javax.swing.JLabel();
+        places2 = new javax.swing.JPanel();
+        places1 = new javax.swing.JLabel();
+        hom2 = new javax.swing.JPanel();
+        hom1 = new javax.swing.JLabel();
+        body2 = new javax.swing.JPanel();
+        body1 = new javax.swing.JLabel();
+        food2 = new javax.swing.JPanel();
+        food1 = new javax.swing.JLabel();
+        fruit2 = new javax.swing.JPanel();
+        fruit1 = new javax.swing.JLabel();
+        vegetable2 = new javax.swing.JPanel();
+        vegetable1 = new javax.swing.JLabel();
+        verb2 = new javax.swing.JPanel();
+        verb1 = new javax.swing.JLabel();
         WordGame4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,39 +58,39 @@ public class Page2 extends javax.swing.JFrame {
         bg.setBackground(new java.awt.Color(0, 153, 153));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        EXIT2.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT2.addMouseListener(new java.awt.event.MouseAdapter() {
+        animal2.setBackground(new java.awt.Color(255, 255, 255));
+        animal2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT2MouseClicked(evt);
+                animal2MouseClicked(evt);
             }
         });
 
-        EXIT.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT.setText("Animals");
-        EXIT.addMouseListener(new java.awt.event.MouseAdapter() {
+        animal1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        animal1.setText("Animals");
+        animal1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXITMouseClicked(evt);
+                animal1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT2Layout = new javax.swing.GroupLayout(EXIT2);
-        EXIT2.setLayout(EXIT2Layout);
-        EXIT2Layout.setHorizontalGroup(
-            EXIT2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT2Layout.createSequentialGroup()
+        javax.swing.GroupLayout animal2Layout = new javax.swing.GroupLayout(animal2);
+        animal2.setLayout(animal2Layout);
+        animal2Layout.setHorizontalGroup(
+            animal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(animal2Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(EXIT)
+                .addComponent(animal1)
                 .addContainerGap(32, Short.MAX_VALUE))
         );
-        EXIT2Layout.setVerticalGroup(
-            EXIT2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT2Layout.createSequentialGroup()
+        animal2Layout.setVerticalGroup(
+            animal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(animal2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(animal1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bg.add(EXIT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 150, 60));
+        bg.add(animal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 150, 60));
 
         jLabel6.setFont(new java.awt.Font("Franklin Gothic Medium", 3, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 102));
@@ -100,21 +100,21 @@ public class Page2 extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 102, 102));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
 
-        กากบาท.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
-        กากบาท.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท.setText("X");
-        กากบาท.addMouseListener(new java.awt.event.MouseAdapter() {
+        close.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
+        close.setForeground(new java.awt.Color(255, 255, 255));
+        close.setText("X");
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาทMouseClicked(evt);
+                closeMouseClicked(evt);
             }
         });
 
-        กากบาท1.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
-        กากบาท1.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท1.setText("<<");
-        กากบาท1.addMouseListener(new java.awt.event.MouseAdapter() {
+        back.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
+        back.setText("<<");
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาท1MouseClicked(evt);
+                backMouseClicked(evt);
             }
         });
 
@@ -124,22 +124,17 @@ public class Page2 extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(กากบาท1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 316, Short.MAX_VALUE)
-                .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(back)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 326, Short.MAX_VALUE)
+                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(กากบาท1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, Short.MAX_VALUE)
+                    .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -172,243 +167,243 @@ public class Page2 extends javax.swing.JFrame {
         WordGame3.setText(" Category");
         bg.add(WordGame3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
 
-        EXIT3.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT3.addMouseListener(new java.awt.event.MouseAdapter() {
+        places2.setBackground(new java.awt.Color(255, 255, 255));
+        places2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT3MouseClicked(evt);
+                places2MouseClicked(evt);
             }
         });
 
-        EXIT1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT1.setText("Places");
-        EXIT1.addMouseListener(new java.awt.event.MouseAdapter() {
+        places1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        places1.setText("Places");
+        places1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT1MouseClicked(evt);
+                places1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT3Layout = new javax.swing.GroupLayout(EXIT3);
-        EXIT3.setLayout(EXIT3Layout);
-        EXIT3Layout.setHorizontalGroup(
-            EXIT3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT3Layout.createSequentialGroup()
+        javax.swing.GroupLayout places2Layout = new javax.swing.GroupLayout(places2);
+        places2.setLayout(places2Layout);
+        places2Layout.setHorizontalGroup(
+            places2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(places2Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(EXIT1)
+                .addComponent(places1)
                 .addContainerGap(44, Short.MAX_VALUE))
         );
-        EXIT3Layout.setVerticalGroup(
-            EXIT3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT3Layout.createSequentialGroup()
+        places2Layout.setVerticalGroup(
+            places2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(places2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EXIT1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(places1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bg.add(EXIT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 150, 60));
+        bg.add(places2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 150, 60));
 
-        EXIT8.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT8.addMouseListener(new java.awt.event.MouseAdapter() {
+        hom2.setBackground(new java.awt.Color(255, 255, 255));
+        hom2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT8MouseClicked(evt);
+                hom2MouseClicked(evt);
             }
         });
 
-        EXIT9.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT9.setText("Home");
-        EXIT9.addMouseListener(new java.awt.event.MouseAdapter() {
+        hom1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        hom1.setText("Home");
+        hom1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT9MouseClicked(evt);
+                hom1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT8Layout = new javax.swing.GroupLayout(EXIT8);
-        EXIT8.setLayout(EXIT8Layout);
-        EXIT8Layout.setHorizontalGroup(
-            EXIT8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EXIT8Layout.createSequentialGroup()
+        javax.swing.GroupLayout hom2Layout = new javax.swing.GroupLayout(hom2);
+        hom2.setLayout(hom2Layout);
+        hom2Layout.setHorizontalGroup(
+            hom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hom2Layout.createSequentialGroup()
                 .addContainerGap(47, Short.MAX_VALUE)
-                .addComponent(EXIT9)
+                .addComponent(hom1)
                 .addGap(43, 43, 43))
         );
-        EXIT8Layout.setVerticalGroup(
-            EXIT8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT8Layout.createSequentialGroup()
+        hom2Layout.setVerticalGroup(
+            hom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(hom2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EXIT9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(hom1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bg.add(EXIT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 150, 60));
+        bg.add(hom2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 150, 60));
 
-        EXIT16.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT16.addMouseListener(new java.awt.event.MouseAdapter() {
+        body2.setBackground(new java.awt.Color(255, 255, 255));
+        body2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT16MouseClicked(evt);
+                body2MouseClicked(evt);
             }
         });
 
-        EXIT17.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT17.setText("Body");
-        EXIT17.addMouseListener(new java.awt.event.MouseAdapter() {
+        body1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        body1.setText("Body");
+        body1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT17MouseClicked(evt);
+                body1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT16Layout = new javax.swing.GroupLayout(EXIT16);
-        EXIT16.setLayout(EXIT16Layout);
-        EXIT16Layout.setHorizontalGroup(
-            EXIT16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT16Layout.createSequentialGroup()
+        javax.swing.GroupLayout body2Layout = new javax.swing.GroupLayout(body2);
+        body2.setLayout(body2Layout);
+        body2Layout.setHorizontalGroup(
+            body2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(body2Layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addComponent(EXIT17)
+                .addComponent(body1)
                 .addContainerGap(51, Short.MAX_VALUE))
         );
-        EXIT16Layout.setVerticalGroup(
-            EXIT16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EXIT16Layout.createSequentialGroup()
+        body2Layout.setVerticalGroup(
+            body2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, body2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(EXIT17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(body1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        bg.add(EXIT16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 150, 60));
+        bg.add(body2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 150, 60));
 
-        EXIT14.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT14.addMouseListener(new java.awt.event.MouseAdapter() {
+        food2.setBackground(new java.awt.Color(255, 255, 255));
+        food2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT14MouseClicked(evt);
+                food2MouseClicked(evt);
             }
         });
 
-        EXIT15.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT15.setText("Food");
-        EXIT15.addMouseListener(new java.awt.event.MouseAdapter() {
+        food1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        food1.setText("Food");
+        food1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT15MouseClicked(evt);
+                food1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT14Layout = new javax.swing.GroupLayout(EXIT14);
-        EXIT14.setLayout(EXIT14Layout);
-        EXIT14Layout.setHorizontalGroup(
-            EXIT14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT14Layout.createSequentialGroup()
+        javax.swing.GroupLayout food2Layout = new javax.swing.GroupLayout(food2);
+        food2.setLayout(food2Layout);
+        food2Layout.setHorizontalGroup(
+            food2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(food2Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(EXIT15)
+                .addComponent(food1)
                 .addContainerGap(51, Short.MAX_VALUE))
         );
-        EXIT14Layout.setVerticalGroup(
-            EXIT14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EXIT14Layout.createSequentialGroup()
+        food2Layout.setVerticalGroup(
+            food2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, food2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(EXIT15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(food1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        bg.add(EXIT14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 150, 60));
+        bg.add(food2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 150, 60));
 
-        EXIT12.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT12.addMouseListener(new java.awt.event.MouseAdapter() {
+        fruit2.setBackground(new java.awt.Color(255, 255, 255));
+        fruit2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT12MouseClicked(evt);
+                fruit2MouseClicked(evt);
             }
         });
 
-        EXIT13.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT13.setText("Fruit");
-        EXIT13.addMouseListener(new java.awt.event.MouseAdapter() {
+        fruit1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        fruit1.setText("Fruit");
+        fruit1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT13MouseClicked(evt);
+                fruit1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT12Layout = new javax.swing.GroupLayout(EXIT12);
-        EXIT12.setLayout(EXIT12Layout);
-        EXIT12Layout.setHorizontalGroup(
-            EXIT12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT12Layout.createSequentialGroup()
+        javax.swing.GroupLayout fruit2Layout = new javax.swing.GroupLayout(fruit2);
+        fruit2.setLayout(fruit2Layout);
+        fruit2Layout.setHorizontalGroup(
+            fruit2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fruit2Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(EXIT13)
+                .addComponent(fruit1)
                 .addContainerGap(48, Short.MAX_VALUE))
         );
-        EXIT12Layout.setVerticalGroup(
-            EXIT12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EXIT12Layout.createSequentialGroup()
+        fruit2Layout.setVerticalGroup(
+            fruit2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fruit2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(EXIT13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fruit1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        bg.add(EXIT12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 150, 60));
+        bg.add(fruit2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 150, 60));
 
-        EXIT10.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT10.addMouseListener(new java.awt.event.MouseAdapter() {
+        vegetable2.setBackground(new java.awt.Color(255, 255, 255));
+        vegetable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT10MouseClicked(evt);
+                vegetable2MouseClicked(evt);
             }
         });
 
-        EXIT7.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT7.setText("Vegetable");
-        EXIT7.addMouseListener(new java.awt.event.MouseAdapter() {
+        vegetable1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        vegetable1.setText("Vegetable");
+        vegetable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT7MouseClicked(evt);
+                vegetable1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT10Layout = new javax.swing.GroupLayout(EXIT10);
-        EXIT10.setLayout(EXIT10Layout);
-        EXIT10Layout.setHorizontalGroup(
-            EXIT10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT10Layout.createSequentialGroup()
+        javax.swing.GroupLayout vegetable2Layout = new javax.swing.GroupLayout(vegetable2);
+        vegetable2.setLayout(vegetable2Layout);
+        vegetable2Layout.setHorizontalGroup(
+            vegetable2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vegetable2Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addComponent(EXIT7)
+                .addComponent(vegetable1)
                 .addContainerGap(25, Short.MAX_VALUE))
         );
-        EXIT10Layout.setVerticalGroup(
-            EXIT10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT10Layout.createSequentialGroup()
+        vegetable2Layout.setVerticalGroup(
+            vegetable2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(vegetable2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EXIT7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(vegetable1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bg.add(EXIT10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 150, 60));
+        bg.add(vegetable2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 150, 60));
 
-        EXIT6.setBackground(new java.awt.Color(255, 255, 255));
-        EXIT6.addMouseListener(new java.awt.event.MouseAdapter() {
+        verb2.setBackground(new java.awt.Color(255, 255, 255));
+        verb2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT6MouseClicked(evt);
+                verb2MouseClicked(evt);
             }
         });
 
-        EXIT11.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
-        EXIT11.setText("Verb");
-        EXIT11.addMouseListener(new java.awt.event.MouseAdapter() {
+        verb1.setFont(new java.awt.Font("Ashcan BB", 0, 24)); // NOI18N
+        verb1.setText("Verb");
+        verb1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EXIT11MouseClicked(evt);
+                verb1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout EXIT6Layout = new javax.swing.GroupLayout(EXIT6);
-        EXIT6.setLayout(EXIT6Layout);
-        EXIT6Layout.setHorizontalGroup(
-            EXIT6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT6Layout.createSequentialGroup()
+        javax.swing.GroupLayout verb2Layout = new javax.swing.GroupLayout(verb2);
+        verb2.setLayout(verb2Layout);
+        verb2Layout.setHorizontalGroup(
+            verb2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verb2Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(EXIT11)
+                .addComponent(verb1)
                 .addContainerGap(55, Short.MAX_VALUE))
         );
-        EXIT6Layout.setVerticalGroup(
-            EXIT6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EXIT6Layout.createSequentialGroup()
+        verb2Layout.setVerticalGroup(
+            verb2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verb2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EXIT11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(verb1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bg.add(EXIT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 150, 60));
+        bg.add(verb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 150, 60));
 
         WordGame4.setFont(new java.awt.Font("Ashcan BB", 1, 50)); // NOI18N
         WordGame4.setForeground(new java.awt.Color(0, 102, 102));
@@ -432,114 +427,128 @@ public class Page2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void EXITMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXITMouseClicked
+    private void animal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_animal1MouseClicked
         // TODO add your handling code here:
         Animals a = new Animals();
         a.setVisible(true);
-   
-    }//GEN-LAST:event_EXITMouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_animal1MouseClicked
 
-    private void EXIT2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT2MouseClicked
+    private void animal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_animal2MouseClicked
         // TODO add your handling code here:
         Animals a = new Animals();
         a.setVisible(true);
-        
-    }//GEN-LAST:event_EXIT2MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_animal2MouseClicked
 
-    private void กากบาทMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาทMouseClicked
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_กากบาทMouseClicked
+    }//GEN-LAST:event_closeMouseClicked
 
-    private void EXIT1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT1MouseClicked
+    private void places1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_places1MouseClicked
         // TODO add your handling code here:
         Places p = new Places();
         p.setVisible(true);
-    }//GEN-LAST:event_EXIT1MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_places1MouseClicked
 
-    private void EXIT3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT3MouseClicked
+    private void places2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_places2MouseClicked
         // TODO add your handling code here:
         Places p = new Places();
         p.setVisible(true);
-    }//GEN-LAST:event_EXIT3MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_places2MouseClicked
 
-    private void EXIT7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT7MouseClicked
+    private void vegetable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vegetable1MouseClicked
         // TODO add your handling code here:
        Vegetable v = new Vegetable();
        v.setVisible(true);
-    }//GEN-LAST:event_EXIT7MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_vegetable1MouseClicked
 
-    private void EXIT9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT9MouseClicked
+    private void hom1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hom1MouseClicked
         // TODO add your handling code here:
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_EXIT9MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_hom1MouseClicked
 
-    private void EXIT8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT8MouseClicked
+    private void hom2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hom2MouseClicked
         // TODO add your handling code here:
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_EXIT8MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_hom2MouseClicked
 
-    private void EXIT6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT6MouseClicked
+    private void verb2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verb2MouseClicked
         // TODO add your handling code here:
        Verb vb = new Verb();
        vb.setVisible(true);
-    }//GEN-LAST:event_EXIT6MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_verb2MouseClicked
 
-    private void EXIT11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT11MouseClicked
+    private void verb1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verb1MouseClicked
         // TODO add your handling code here:
        Verb vb = new Verb();
        vb.setVisible(true);
-    }//GEN-LAST:event_EXIT11MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_verb1MouseClicked
 
-    private void EXIT13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT13MouseClicked
+    private void fruit1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fruit1MouseClicked
         // TODO add your handling code here:
        Fruit f = new Fruit();
        f.setVisible(true);
-    }//GEN-LAST:event_EXIT13MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_fruit1MouseClicked
 
-    private void EXIT15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT15MouseClicked
+    private void food1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_food1MouseClicked
         // TODO add your handling code here:
        Food fo = new Food();
        fo.setVisible(true);
-    }//GEN-LAST:event_EXIT15MouseClicked
+    }//GEN-LAST:event_food1MouseClicked
 
-    private void EXIT17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT17MouseClicked
+    private void body1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_body1MouseClicked
         // TODO add your handling code here:
        Body b = new Body();
        b.setVisible(true);
-    }//GEN-LAST:event_EXIT17MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_body1MouseClicked
 
-    private void EXIT16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT16MouseClicked
+    private void body2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_body2MouseClicked
         // TODO add your handling code here:
         Body b = new Body();
        b.setVisible(true);
-    }//GEN-LAST:event_EXIT16MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_body2MouseClicked
 
-    private void EXIT14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT14MouseClicked
+    private void food2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_food2MouseClicked
         // TODO add your handling code here:
        Food fo = new Food();
        fo.setVisible(true);
-    }//GEN-LAST:event_EXIT14MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_food2MouseClicked
 
-    private void EXIT12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT12MouseClicked
+    private void fruit2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fruit2MouseClicked
         // TODO add your handling code here:
        Fruit f = new Fruit();
        f.setVisible(true);
-    }//GEN-LAST:event_EXIT12MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_fruit2MouseClicked
 
-    private void EXIT10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXIT10MouseClicked
+    private void vegetable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vegetable2MouseClicked
         // TODO add your handling code here:
        Vegetable v = new Vegetable();
        v.setVisible(true);
-    }//GEN-LAST:event_EXIT10MouseClicked
+       this.setVisible(false);
+    }//GEN-LAST:event_vegetable2MouseClicked
 
-    private void กากบาท1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาท1MouseClicked
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
         // TODO add your handling code here:
         WordGame w = new WordGame();
         w.setVisible(true);
-    }//GEN-LAST:event_กากบาท1MouseClicked
+        this.setVisible(false); 
+    }//GEN-LAST:event_backMouseClicked
 
     /**
      * @param args the command line arguments
@@ -577,30 +586,30 @@ public class Page2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel EXIT;
-    private javax.swing.JLabel EXIT1;
-    private javax.swing.JPanel EXIT10;
-    private javax.swing.JLabel EXIT11;
-    private javax.swing.JPanel EXIT12;
-    private javax.swing.JLabel EXIT13;
-    private javax.swing.JPanel EXIT14;
-    private javax.swing.JLabel EXIT15;
-    private javax.swing.JPanel EXIT16;
-    private javax.swing.JLabel EXIT17;
-    private javax.swing.JPanel EXIT2;
-    private javax.swing.JPanel EXIT3;
-    private javax.swing.JPanel EXIT6;
-    private javax.swing.JLabel EXIT7;
-    private javax.swing.JPanel EXIT8;
-    private javax.swing.JLabel EXIT9;
     private javax.swing.JLabel WordGame3;
     private javax.swing.JLabel WordGame4;
+    private javax.swing.JLabel animal1;
+    private javax.swing.JPanel animal2;
+    private javax.swing.JLabel back;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel body1;
+    private javax.swing.JPanel body2;
+    private javax.swing.JLabel close;
+    private javax.swing.JLabel food1;
+    private javax.swing.JPanel food2;
+    private javax.swing.JLabel fruit1;
+    private javax.swing.JPanel fruit2;
+    private javax.swing.JLabel hom1;
+    private javax.swing.JPanel hom2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JLabel กากบาท;
-    private javax.swing.JLabel กากบาท1;
+    private javax.swing.JLabel places1;
+    private javax.swing.JPanel places2;
+    private javax.swing.JLabel vegetable1;
+    private javax.swing.JPanel vegetable2;
+    private javax.swing.JLabel verb1;
+    private javax.swing.JPanel verb2;
     // End of variables declaration//GEN-END:variables
 }

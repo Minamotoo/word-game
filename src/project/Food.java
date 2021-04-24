@@ -30,8 +30,8 @@ public class Food extends javax.swing.JFrame {
         bg = new javax.swing.JPanel();
         WordGame1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        กากบาท = new javax.swing.JLabel();
-        กากบาท1 = new javax.swing.JLabel();
+        back = new javax.swing.JLabel();
+        close = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -55,21 +55,21 @@ public class Food extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
 
-        กากบาท.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
-        กากบาท.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท.setText("X");
-        กากบาท.addMouseListener(new java.awt.event.MouseAdapter() {
+        back.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
+        back.setText("<<");
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาทMouseClicked(evt);
+                backMouseClicked(evt);
             }
         });
 
-        กากบาท1.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
-        กากบาท1.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท1.setText("<<");
-        กากบาท1.addMouseListener(new java.awt.event.MouseAdapter() {
+        close.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
+        close.setForeground(new java.awt.Color(255, 255, 255));
+        close.setText("X");
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาท1MouseClicked(evt);
+                closeMouseClicked(evt);
             }
         });
 
@@ -79,17 +79,17 @@ public class Food extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(กากบาท1)
+                .addComponent(back)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 326, Short.MAX_VALUE)
-                .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(กากบาท1))
+                    .addComponent(back)
+                    .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -126,6 +126,7 @@ public class Food extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, -1, -1));
 
+        option1.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option1.setText("ทดสอบ");
         option1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,9 +135,11 @@ public class Food extends javax.swing.JFrame {
         });
         jPanel1.add(option1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 150, 60));
 
+        option3.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option3.setText("jButton2");
         jPanel1.add(option3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 150, 60));
 
+        option2.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option2.setText("jButton2");
         option2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,6 +148,7 @@ public class Food extends javax.swing.JFrame {
         });
         jPanel1.add(option2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 150, 60));
 
+        option4.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option4.setText("jButton2");
         jPanel1.add(option4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 150, 60));
 
@@ -164,17 +168,6 @@ public class Food extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void กากบาทMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาทMouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_กากบาทMouseClicked
-
-    private void กากบาท1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาท1MouseClicked
-        // TODO add your handling code here:
-        Page2 p = new Page2();
-        p.setVisible(true);
-    }//GEN-LAST:event_กากบาท1MouseClicked
-
     private void option1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_option1ActionPerformed
@@ -182,6 +175,18 @@ public class Food extends javax.swing.JFrame {
     private void option2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_option2ActionPerformed
+
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
+        // TODO add your handling code here:
+        Page2 p = new Page2();
+        p.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_backMouseClicked
+
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_closeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -220,7 +225,9 @@ public class Food extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel WordGame1;
+    private javax.swing.JLabel back;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel close;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -230,7 +237,5 @@ public class Food extends javax.swing.JFrame {
     private javax.swing.JButton option2;
     private javax.swing.JButton option3;
     private javax.swing.JButton option4;
-    private javax.swing.JLabel กากบาท;
-    private javax.swing.JLabel กากบาท1;
     // End of variables declaration//GEN-END:variables
 }

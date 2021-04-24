@@ -16,10 +16,59 @@ public class Animals extends javax.swing.JFrame {
      */        
     int score = 0;
     int count = 0;
-    String[] animals = {"Cat", "Dog", "Pig", "Giraffe"};
+    String stage="Started";
+    String[][] animals = new String[][] {
+       {"worm","หนอน"," ผีเสื้อ "," กิ้งก่า","แมงมุม"},
+{"cobra","งูเห่า"," วัวนม","ไส้เดือน"," กิ้งก่า"},
+ {"squid","ปลาหมึก"," ปลาดาว"," ม้าน้ำ ","แมงกะพรุน"},
+{"starfish","ปลาดาว","ปลาหมึก"," ม้าน้ำ"," แมงกะพรุน"},
+{"dragonfly","หมูป่า","มังกร","แมลงปอ","แมวน้ำ"},
+{"eagle","นกกระจอกเทศ","นกยูง"," นกอินทรี"," ไก่งวง"},
+{"ostrich","ไก่งวง","นกอินทรี","นกยูง","นกกระจอกเทศ"},
+{"peacock","ไก่งวง"," นกอินทรี"," นกกระจอกเทศ"," นกยูง"},
+{"seahorse","แมงกะพรุน","ปลาหมึก","ปลาดาว"," ม้าน้ำ"},
+{"kangaroo","ม้า ","จิงโจ้","เก้งป่า","เลียงผา"}
+};
+    int [] ans = new int[]{1,1,1,1,3,3,4,4,4,2};
     public Animals() {
         initComponents();
+       this.nextCount();
     }
+    private void nextCount(){
+        if(count<10){
+            wordCount1.setText("No.");
+        option3.setVisible(true);
+        option4.setVisible(true);
+        wordGame.setText(animals[count][0]);
+        wordCount.setText(Integer.toString(count+1));
+        scoreNumber.setText(Integer.toString(score));
+        option1.setText(animals[count][1]);
+        option2.setText(animals[count][2]);
+        option3.setText(animals[count][3]);
+        option4.setText(animals[count][4]);
+        }else{
+            stage="Ended";
+          scoreNumber.setText(Integer.toString(score));
+         option1.setText("back");
+         option2.setText("restart");
+         option3.setVisible(false);
+        option4.setVisible(false);
+        if(score<=3){
+         wordGame.setText("To bad, try again");
+        }else if(score<=6){
+         wordGame.setText("it's quite good");
+        }else if(score<=9){
+         wordGame.setText("Woww, NICE");
+        }else{
+         wordGame.setText("Perfect!!");
+        }
+        wordCount.setText("");
+         wordCount1.setText("");
+        
+        
+        }
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,8 +84,8 @@ public class Animals extends javax.swing.JFrame {
         bg = new javax.swing.JPanel();
         scoreNumber = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        กากบาท = new javax.swing.JLabel();
-        กากบาท1 = new javax.swing.JLabel();
+        back = new javax.swing.JLabel();
+        close = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -48,6 +97,7 @@ public class Animals extends javax.swing.JFrame {
         wordCount = new javax.swing.JLabel();
         wordGame = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
+        wordCount1 = new javax.swing.JLabel();
 
         jButton1.setText("jButton1");
 
@@ -65,21 +115,21 @@ public class Animals extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(153, 0, 255));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
 
-        กากบาท.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
-        กากบาท.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท.setText("X");
-        กากบาท.addMouseListener(new java.awt.event.MouseAdapter() {
+        back.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
+        back.setText("<<");
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาทMouseClicked(evt);
+                backMouseClicked(evt);
             }
         });
 
-        กากบาท1.setFont(new java.awt.Font("Ashcan BB", 1, 24)); // NOI18N
-        กากบาท1.setForeground(new java.awt.Color(255, 255, 255));
-        กากบาท1.setText("<<");
-        กากบาท1.addMouseListener(new java.awt.event.MouseAdapter() {
+        close.setFont(new java.awt.Font("Ashcan BB", 1, 30)); // NOI18N
+        close.setForeground(new java.awt.Color(255, 255, 255));
+        close.setText("X");
+        close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                กากบาท1MouseClicked(evt);
+                closeMouseClicked(evt);
             }
         });
 
@@ -89,17 +139,17 @@ public class Animals extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(กากบาท1)
+                .addComponent(back)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 326, Short.MAX_VALUE)
-                .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(กากบาท, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(กากบาท1))
+                    .addComponent(back)
+                    .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -136,6 +186,7 @@ public class Animals extends javax.swing.JFrame {
         jLabel6.setText("___________________________");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 350, -1));
 
+        option2.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option2.setText("option2");
         option2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,6 +204,7 @@ public class Animals extends javax.swing.JFrame {
         });
         jPanel1.add(option1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 150, 60));
 
+        option3.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option3.setText("option3");
         option3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,6 +213,7 @@ public class Animals extends javax.swing.JFrame {
         });
         jPanel1.add(option3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 150, 60));
 
+        option4.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option4.setText("option4");
         option4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,19 +228,25 @@ public class Animals extends javax.swing.JFrame {
         wordCount.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
         wordCount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wordCount.setText("-");
-        bg.add(wordCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 70, -1));
+        bg.add(wordCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 70, -1));
 
         wordGame.setBackground(new java.awt.Color(0, 0, 0));
         wordGame.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
         wordGame.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wordGame.setText("Word");
-        bg.add(wordGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 170, -1));
+        bg.add(wordGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 360, -1));
 
         scoreLabel.setBackground(new java.awt.Color(0, 0, 0));
         scoreLabel.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
         scoreLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreLabel.setText("score:");
         bg.add(scoreLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 150, 30));
+
+        wordCount1.setBackground(new java.awt.Color(0, 0, 0));
+        wordCount1.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        wordCount1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        wordCount1.setText("No.");
+        bg.add(wordCount1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 70, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -203,32 +262,72 @@ public class Animals extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void กากบาทMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาทMouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_กากบาทMouseClicked
-
-    private void กากบาท1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_กากบาท1MouseClicked
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
         // TODO add your handling code here:
         Page2 p = new Page2();
         p.setVisible(true);
-    }//GEN-LAST:event_กากบาท1MouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_backMouseClicked
 
     private void option1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1ActionPerformed
+        int check = 1;
+       if(stage=="Started"){
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+       }else{
+       Page2 p = new Page2();
+        p.setVisible(true);
+        this.setVisible(false);
+       }
+    
+    
     
     }//GEN-LAST:event_option1ActionPerformed
 
     private void option2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2ActionPerformed
-       
+          int check = 2;
+       if(stage=="Started"){
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+       }else{
+       score = 0;
+     count = 0;
+     stage="Started";
+     this.nextCount();
+       }
+    
     }//GEN-LAST:event_option2ActionPerformed
 
     private void option3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3ActionPerformed
-      
+         int check = 3;
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+    
     }//GEN-LAST:event_option3ActionPerformed
 
     private void option4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4ActionPerformed
-      
+         int check = 4;
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+    
     }//GEN-LAST:event_option4ActionPerformed
+
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_closeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -263,10 +362,14 @@ public class Animals extends javax.swing.JFrame {
                 new Animals().setVisible(true);
             }
         });
+        
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel back;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel close;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel6;
@@ -281,8 +384,7 @@ public class Animals extends javax.swing.JFrame {
     private javax.swing.JLabel scoreLabel;
     private javax.swing.JLabel scoreNumber;
     private javax.swing.JLabel wordCount;
+    private javax.swing.JLabel wordCount1;
     private javax.swing.JLabel wordGame;
-    private javax.swing.JLabel กากบาท;
-    private javax.swing.JLabel กากบาท1;
     // End of variables declaration//GEN-END:variables
 }
