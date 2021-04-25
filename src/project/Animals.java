@@ -11,9 +11,7 @@ package project;
  */
 public class Animals extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Animals
-     */        
+
     int score = 0;
     int count = 0;
     String stage="Started";
@@ -228,7 +226,7 @@ public class Animals extends javax.swing.JFrame {
         wordCount.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
         wordCount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wordCount.setText("-");
-        bg.add(wordCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 70, -1));
+        bg.add(wordCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 70, -1));
 
         wordGame.setBackground(new java.awt.Color(0, 0, 0));
         wordGame.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N

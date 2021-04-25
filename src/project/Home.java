@@ -11,13 +11,61 @@ package project;
  */
 public class Home extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Home
-     */
+
+    int score = 0;
+    int count = 0;
+    String stage="Started";
+    String[][] homes = new String[][] {
+       {"bathroom","ห้องนํ้า","ห้องนอน","ห้องนั่งเล่น","ห้องครัว"},
+{"kitchen","ห้องนํ้า","ห้องนอน","ห้องนั่งเล่น","ห้องครัว"},
+{"bedroom ","ห้องนํ้า","ห้องนอน","ห้องนั่งเล่น","ห้องครัว"},
+{"bath","แปรงผม","กระจก"," อ่างอาบน้ำ","ผ้าปูที่นอน"},
+{"shower","แปรงผม","กระจก"," ฝักบัว","ผ้าปูที่นอน"},
+{"sponge","ตู้เสื้อผ้า","กระจก"," ฝักบัว"," ฟองนํ้า"},
+{"roof","ปล่องไฟ","หลังคา"," ตู้รับจดหมาย","กระเบื้อง"},
+{"chimney","ปล่องไฟ","หลังคา"," ตู้รับจดหมาย","กระเบื้อง"},
+{"mailbox","ปล่องไฟ","หลังคา"," ตู้รับจดหมาย","กระเบื้อง"},
+{"sponge","ตู้เสื้อผ้า","กระจก"," ฝักบัว"," ฟองนํ้า"}
+};
+    int [] ans = new int[]{1,4,2,3,3,4,2,1,3,4};
     public Home() {
         initComponents();
+        this.nextCount();
     }
-
+ private void nextCount(){
+        if(count<10){
+            wordCount1.setText("No.");
+        option3.setVisible(true);
+        option4.setVisible(true);
+        wordGame.setText(homes[count][0]);
+        wordCount.setText(Integer.toString(count+1));
+        scoreNumber.setText(Integer.toString(score));
+        option1.setText(homes[count][1]);
+        option2.setText(homes[count][2]);
+        option3.setText(homes[count][3]);
+        option4.setText(homes[count][4]);
+        }else{
+            stage="Ended";
+          scoreNumber.setText(Integer.toString(score));
+         option1.setText("back");
+         option2.setText("restart");
+         option3.setVisible(false);
+        option4.setVisible(false);
+        if(score<=3){
+         wordGame.setText("To bad, try again");
+        }else if(score<=6){
+         wordGame.setText("it's quite good");
+        }else if(score<=9){
+         wordGame.setText("Woww, NICE");
+        }else{
+         wordGame.setText("Perfect!!");
+        }
+        wordCount.setText("");
+         wordCount1.setText("");
+        
+        
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,7 +75,7 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        WordGame1 = new javax.swing.JLabel();
+        wordGame = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         back = new javax.swing.JLabel();
         close = new javax.swing.JLabel();
@@ -39,15 +87,19 @@ public class Home extends javax.swing.JFrame {
         option3 = new javax.swing.JButton();
         option2 = new javax.swing.JButton();
         option4 = new javax.swing.JButton();
+        wordCount1 = new javax.swing.JLabel();
+        wordCount = new javax.swing.JLabel();
+        scoreLabel = new javax.swing.JLabel();
+        scoreNumber = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        WordGame1.setBackground(new java.awt.Color(0, 0, 0));
-        WordGame1.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
-        WordGame1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        WordGame1.setText("Bedroom");
-        getContentPane().add(WordGame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 115, -1, -1));
+        wordGame.setBackground(new java.awt.Color(0, 0, 0));
+        wordGame.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        wordGame.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        wordGame.setText("Bedroom");
+        getContentPane().add(wordGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 115, 400, -1));
 
         jPanel4.setBackground(new java.awt.Color(0, 51, 153));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,6 +187,11 @@ public class Home extends javax.swing.JFrame {
 
         option3.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option3.setText("jButton2");
+        option3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                option3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(option3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 150, 60));
 
         option2.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
@@ -148,24 +205,75 @@ public class Home extends javax.swing.JFrame {
 
         option4.setFont(new java.awt.Font("TH Sarabun New", 0, 11)); // NOI18N
         option4.setText("jButton2");
+        option4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                option4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(option4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 150, 60));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 400, 230));
+
+        wordCount1.setBackground(new java.awt.Color(0, 0, 0));
+        wordCount1.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        wordCount1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        wordCount1.setText("No.");
+        getContentPane().add(wordCount1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 70, -1));
+
+        wordCount.setBackground(new java.awt.Color(0, 0, 0));
+        wordCount.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        wordCount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        wordCount.setText("-");
+        getContentPane().add(wordCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 70, -1));
+
+        scoreLabel.setBackground(new java.awt.Color(0, 0, 0));
+        scoreLabel.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        scoreLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        scoreLabel.setText("score:");
+        getContentPane().add(scoreLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 150, 30));
+
+        scoreNumber.setBackground(new java.awt.Color(0, 0, 0));
+        scoreNumber.setFont(new java.awt.Font("Ashcan BB", 1, 36)); // NOI18N
+        scoreNumber.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        scoreNumber.setText("-");
+        getContentPane().add(scoreNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 50, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void option1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1ActionPerformed
-        // TODO add your handling code here:
+        int check = 1;
+       if(stage=="Started"){
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+       }else{
+       Page2 p = new Page2();
+        p.setVisible(true);
+        this.setVisible(false);
+       }
     }//GEN-LAST:event_option1ActionPerformed
 
     private void option2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2ActionPerformed
-        // TODO add your handling code here:
+       int check = 2;
+       if(stage=="Started"){
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+       }else{
+       score = 0;
+     count = 0;
+     stage="Started";
+     this.nextCount();
+       }
     }//GEN-LAST:event_option2ActionPerformed
 
     private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
-        // TODO add your handling code here:
-        Page2 p = new Page2();
+       Page2 p = new Page2();
         p.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_backMouseClicked
@@ -174,6 +282,24 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_closeMouseClicked
+
+    private void option3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3ActionPerformed
+        int check = 3;
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+    }//GEN-LAST:event_option3ActionPerformed
+
+    private void option4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4ActionPerformed
+        int check = 4;
+         if(check==ans[count]){
+         score+=1;
+         }
+         count+=1;
+         this.nextCount();
+    }//GEN-LAST:event_option4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,7 +337,6 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel WordGame1;
     private javax.swing.JLabel back;
     private javax.swing.JLabel close;
     private javax.swing.JLabel jLabel6;
@@ -223,5 +348,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton option2;
     private javax.swing.JButton option3;
     private javax.swing.JButton option4;
+    private javax.swing.JLabel scoreLabel;
+    private javax.swing.JLabel scoreNumber;
+    private javax.swing.JLabel wordCount;
+    private javax.swing.JLabel wordCount1;
+    private javax.swing.JLabel wordGame;
     // End of variables declaration//GEN-END:variables
 }
